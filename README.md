@@ -3,12 +3,12 @@
 Mencari pasangan titik terdekat merupakan suatu persoalan yang dapat kita jumpai dalam dunia nyata, seperti pada bidang genetika dan penerbangan. Jarak antara dua titik dihitung dengan rumus *Euclidian* pada suatu dimensi D. Salah satu algoritma yang dapat digunakan untuk memecahkan persoalan ini dengan cukup efisien adalah *Divide and Conquer*. Secara garis besar algoritma *Divide and Conquer* membagi persoalan menjadi bagian-bagian yang lebih kecil, kemudian solusi dari setiap bagian-bagian kecil tersebut digabungkan untuk memperoleh solusi keseluruhan. Program ini menghitung dan mencari pasangan titik terdekat tersebut dengan menggunakan algoritma *Divide and Conquer* pada suatu dimensi D.
 
 ## Daftar Isi
-[Struktur Repositori](#struktur-repositori)
-[Minimum *Requirements*](#minimum-requirements)
-[Cara *Build* Program](#cara-build-program)
-[Cara Menjalankan Program](#cara-menjalankan-program)
-[Modifikasi Program](#modifikasi-program)
-[Catatan](#catatan)
+- [Struktur Repositori](#struktur-repositori)
+- [Minimum *Requirements*](#minimum-requirements)
+- [Cara *Build* Program](#cara-build-program)
+- [Cara Menjalankan Program](#cara-menjalankan-program)
+- [Modifikasi Program](#modifikasi-program)
+- [Catatan](#catatan)
 
 
 ## Struktur Repositori
