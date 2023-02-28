@@ -89,6 +89,14 @@ Baik untuk alternatif 1 maupun 2, jika program telah berjalan dengan baik, maka 
 
 ![Tampilan Awal](./assets/images/tampilan-awal.png)
 
+### *Visualizer*
+Khusus untuk dimensi 3, Anda dapat melihat visualisasi titik dengan melakukan langkah-langkah berikut,
+1. Pastikan Anda telah berada pada `root` direktori repositori
+2. Gunakan perintah `make run-visualizer` pada terminal
+3. Jika berhasil, maka akan muncul suatu *pop-up window* yang menampilkan visualisasi titik. Selain itu, juga terdapat output visualisasi titik dalam format .png yang dapat dilihat pada folder `output` 
+
+P.S. Gunakan *vi
+
 ## Modifikasi Program
 > *WARNING*: 
 
