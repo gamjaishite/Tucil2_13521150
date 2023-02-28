@@ -95,7 +95,7 @@ Khusus untuk dimensi 3, Anda dapat melihat visualisasi titik dengan melakukan la
 2. Gunakan perintah `make run-visualizer` pada terminal
 3. Jika berhasil, maka akan muncul suatu *pop-up window* yang menampilkan visualisasi titik. Selain itu, juga terdapat output visualisasi titik dalam format .png yang dapat dilihat pada folder `output` 
 
-P.S. Gunakan *vi
+> P.S. Gunakan *visualizer* setelah Anda menjalankan program utama
 
 ## Modifikasi Program
 > *WARNING*: 
