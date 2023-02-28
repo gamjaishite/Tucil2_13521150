@@ -6,6 +6,7 @@ import (
 	"github.com/sozyGithub/project/tucil_2/src/point"
 )
 
+// Brute Force Algorithm implementation
 func DoBruteForce(points []point.Point, totalOpt *int) (float64, [][]point.Point) {
 	var shortestDistance float64 = math.MaxFloat64
 	var sdArray [][]point.Point

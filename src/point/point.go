@@ -55,7 +55,7 @@ func GeneratePoints(N uint32, dimension uint32) []Point {
 		coordinate := make([]float64, dimension)
 		for j := 0; j < int(dimension); j++ {
 			sign := rand.Intn(2)
-			coordinate[j] = float64(rand.Float64() * 1000 * math.Pow(-1, float64(sign)))
+			coordinate[j] = float64(rand.Float64() * 1000000 * math.Pow(-1, float64(sign)))
 		}
 		points = append(points, CreatePoint(coordinate, dimension))
 	}
@@ -101,10 +101,12 @@ func CalculateDistance(p1, p2 Point) float64 {
 	return math.Sqrt(sum)
 }
 
+// Check if two floating point number is equal
 func IsEqual(a, b float64) bool {
 	return math.Abs(a-b) <= float64EqualityTracehold
 }
 
+// Print formated [][]Point from slice of shortest distance array
 func PrintFormattedPoint(sdArray [][]Point) {
 	for i := 0; i < len(sdArray); i++ {
 		fmt.Printf("%*s %s %s\n", len(sdArray[i][0].GetCoors())+22, sdArray[i][0].GetCoors(), "<->", sdArray[i][1].GetCoors())

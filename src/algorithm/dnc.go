@@ -6,6 +6,7 @@ import (
 	"github.com/sozyGithub/project/tucil_2/src/point"
 )
 
+// Divide and Conquer Algorithm implementation
 func DoDNC(pointsX []point.Point, totalOpt *int) (float64, [][]point.Point) {
 	n := len(pointsX)
 	dimension := pointsX[0].GetDimension()
@@ -29,6 +30,7 @@ func DoDNC(pointsX []point.Point, totalOpt *int) (float64, [][]point.Point) {
 		return shortestDistance, sdArray
 	}
 
+	// Divide
 	midPoint := pointsX[n/2]
 	deltaLeft, sdArrayL := DoDNC(pointsX[0:n/2], totalOpt)
 	deltaRight, sdArrayR := DoDNC(pointsX[n/2:n], totalOpt)
@@ -67,6 +69,7 @@ func DoDNC(pointsX []point.Point, totalOpt *int) (float64, [][]point.Point) {
 		}
 	}
 
+	// Conquer
 	for i := 0; i < indxL; i++ {
 		for j := 0; j < indxR; j++ {
 			skip := false

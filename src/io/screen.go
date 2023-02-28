@@ -2,6 +2,7 @@ package io
 
 import "fmt"
 
+// Initial screen display
 func InitScreen() {
 	welcomeString := "Closest Pair N-D Points"
 	fmt.Printf("%s %*s\n", "+++", len(welcomeString)+4, "+++")

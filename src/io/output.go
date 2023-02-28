@@ -8,6 +8,7 @@ import (
 	"github.com/sozyGithub/project/tucil_2/src/point"
 )
 
+// Writing array of points to CSV file for visualization
 func WritePointsToCSV(points []point.Point) {
 	dataset := make([][]string, len(points)+1)
 	var header = []string{
@@ -22,7 +23,7 @@ func WritePointsToCSV(points []point.Point) {
 
 	csvFile, err := os.Create("../src/plot/points.csv")
 	if err != nil {
-		fmt.Println("Failed to export points.", err)
+		fmt.Println("\n!!Failed to export points.!!")
 	}
 
 	csvWriter := csv.NewWriter(csvFile)
@@ -33,6 +34,7 @@ func WritePointsToCSV(points []point.Point) {
 	csvFile.Close()
 }
 
+// Writing array of closest pair of points to CSV file for visualization
 func WritePPointsToCSV(sdArray [][]point.Point) {
 	dataset := make([][]string, len(sdArray)*2+1)
 	var header = []string{

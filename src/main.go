@@ -59,6 +59,9 @@ func main() {
 	fmt.Printf("%-20s: %d\n", "Physical Cores", cpuid.CPU.PhysicalCores)
 	fmt.Printf("%-20s: %d\n", "Logical Cores", cpuid.CPU.LogicalCores)
 	if dimension == 3 {
+		fmt.Println("\n---")
+		fmt.Println("Visualisasi titik yang dihasilkan dapat dilihat dengan menjalankan perintah 'make run-visualizer' pada terminal")
+		fmt.Println("---")
 		io.WritePointsToCSV(pointsX)
 		io.WritePPointsToCSV(sdArrayDNC)
 	}
